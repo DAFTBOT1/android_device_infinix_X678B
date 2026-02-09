@@ -93,3 +93,10 @@ wifi.tethering.interface=ap0
 
 # Zygote
 zygote.critical_window.minute=10
+
+#Infinity Flags
+ro.product.marketname=Infinix Note 30 Pro
+ro.infinity.soc=Mediatek Helio G99
+ro.infinity.battery=5000 mAh
+ro.infinity.display=1080 x 2400, 120 Hz
+ro.infinity.camera=108MP + 2MP + 2MP
