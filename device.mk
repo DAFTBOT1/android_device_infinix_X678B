@@ -315,6 +315,9 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayVeritas \
     SystemUIResOverlayVeritas
 
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 # Lineage-Specific Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlay
