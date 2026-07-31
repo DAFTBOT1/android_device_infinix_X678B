@@ -33,5 +33,12 @@ LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
 # Enable activity open override fix for low-end devices or devices affected by activity open/exit freezing issue
 PERF_ANIM_OVERRIDE := true
 
-# GAPPS BUILD IF NEEDED,DELETE # TO ACTIVATE IT AND SET IT TRUE
-#WITH_GMS := true/false
+# AviumConfiguration
+WITH_GMS ?= true
+AVIUM_MAINTAINER ?= MR.BELT
+AVIUM_SETTINGS_SOC_MODEL_NAME ?= Mediatek Helio Gay99
+AVIUM_SETTINGS_DEVICE_CODENAME ?= Infinix Note 30 PRO
+AVIUM_FORCE_SET_FAKE_PROP ?= true
+TARGET_FORCE_ENABLE_BLUR ?= false
+TARGET_INCLUDE_GOOGLEIME ?= true
+TARGET_GOOGLEIME_OVERRIDE_IME ?= true
