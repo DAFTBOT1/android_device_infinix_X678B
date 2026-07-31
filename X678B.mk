@@ -1,5 +1,5 @@
 #
-# SPDX-FileCopyrightText: The Infinity-X Project And Linus Torvalds
+# SPDX-FileCopyrightText: Luminedroid
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,8 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, vendor/lumine/config/common_full_phone.mk)
 
-# Inherit some common Infinity-X stuff.
+# Inherit some common LumineDroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+LUMINE_MAINTAINER := MR.BELT
 
 BOARD_VENDOR := Infinix
 PRODUCT_NAME := X678B
@@ -33,5 +34,7 @@ LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
 # Enable activity open override fix for low-end devices or devices affected by activity open/exit freezing issue
 PERF_ANIM_OVERRIDE := true
 
-# GAPPS BUILD IF NEEDED,DELETE # TO ACTIVATE IT AND SET IT TRUE
-#WITH_GMS := true/false
+# ACTIVE THE GMS BUILD
+WITH_GMS := true
+
+
