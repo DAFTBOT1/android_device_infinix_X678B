@@ -1,5 +1,5 @@
 #
-# SPDX-FileCopyrightText: Luminedroid
+# SPDX-FileCopyrightText: Luminedroid Project.
 #
 # SPDX-License-Identifier: Apache-2.0
 #
