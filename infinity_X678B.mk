@@ -11,17 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/infinix/X678B/device.mk)
 
 # Inherit some common Infinity-X stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
-
-# Infinity-X Specific Flags
-INFINITY_BUILD_TYPE := OFFICIAL
-INFINITY_MAINTAINER := "akif"
-TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GAPPS := true
-TARGET_SUPPORTS_BLUR := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 BOARD_VENDOR := Infinix
-PRODUCT_NAME := infinity_X678B
+PRODUCT_NAME := lineage_X678B
 PRODUCT_DEVICE := X678B
 PRODUCT_MANUFACTURER := Infinix
 PRODUCT_BRAND := Infinix
@@ -38,3 +31,6 @@ LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
 
 # Enable activity open override fix for low-end devices or devices affected by activity open/exit freezing issue
 PERF_ANIM_OVERRIDE := true
+
+# gms / delete # for gms build 
+WITH_GMS := true
